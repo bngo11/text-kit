@@ -10,5 +10,4 @@ LICENSE=LPPL-1.2
 RDEPEND=>=dev-texlive/texlive-latexextra-2010 virtual/latex-base
 SLOT=0
 SRC_URI=http://mirrors.ctan.org/macros/latex/contrib/curve.zip -> curve-1.16.zip
-_eclasses_=latex-package	17f13abe0de88340745e52e6b627aee7
 _md5_=88320eb5d3d1d9f9a6a74131cfe671af
