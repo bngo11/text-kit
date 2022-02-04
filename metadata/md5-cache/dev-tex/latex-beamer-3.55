@@ -10,5 +10,4 @@ LICENSE=GPL-2 FDL-1.2 LPPL-1.3c
 RDEPEND=>=dev-tex/pgf-1.10 dev-tex/xcolor !dev-tex/translator virtual/latex-base
 SLOT=0
 SRC_URI=https://github.com/josephwright/beamer/archive/v3.55.tar.gz -> latex-beamer-3.55.tar.gz
-_eclasses_=latex-package	17f13abe0de88340745e52e6b627aee7
 _md5_=e0755f7b893b6bce30d46fe9fb81584f
