@@ -14,15 +14,12 @@ STABLE_VERSION = "22.04.0"
 async def generate(hub, **pkginfo):
 	json_data = await hub.pkgtools.fetch.get_page(f"https://api.github.com/repos/{github_user}/{github_repo}/tags")
 	tags = json.loads(json_data)
-	versions = list(hub.pkgtools.github.iter_tag_versions(tags))
-	latest, tag_data = await hub.pkgtools.github.latest_tag_version(hub, github_user, github_repo, tags)
 
 	# Generate an ebuild for the stable version
 	await generate_ebuild(hub, tags, stable=True, **pkginfo)
 
 	# Now, generate an ebuild for the latest version
-	if latest != STABLE_VERSION:
-		await generate_ebuild(hub, tags, stable=False, **pkginfo)
+	await generate_ebuild(hub, tags, stable=False, **pkginfo)
 
 
 async def generate_ebuild(hub, tags, stable=True, **pkginfo):
