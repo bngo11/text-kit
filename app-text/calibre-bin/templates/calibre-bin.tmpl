@@ -6,8 +6,7 @@ inherit xdg
 
 DESCRIPTION="Calibre is an ebook management software"
 HOMEPAGE="https://calibre-ebook.com"
-SRC_URI="x86? ( {{artifacts["x86"].src_uri}} )
-		amd64? ( {{artifacts["amd64"].src_uri}} )"
+SRC_URI="{{artifacts[0].src_uri}}"
 
 LICENSE="GPL-3"
 SLOT="0"
