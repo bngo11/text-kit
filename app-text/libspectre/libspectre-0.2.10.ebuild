@@ -1,0 +1,43 @@
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI=7
+inherit autotools eutils ltprune
+
+DESCRIPTION="Library for rendering Postscript documents"
+HOMEPAGE="https://www.freedesktop.org/wiki/Software/libspectre"
+SRC_URI="https://libspectre.freedesktop.org/releases/${P}.tar.gz"
+
+LICENSE="GPL-2"
+SLOT="0"
+KEYWORDS="*"
+IUSE="debug doc static-libs"
+
+RDEPEND=">=app-text/ghostscript-gpl-9.53:="
+DEPEND="${RDEPEND}
+	virtual/pkgconfig
+	doc? ( app-doc/doxygen )
+"
+
+# does not actually test anything, see bug 362557
+RESTRICT="test"
+
+src_configure() {
+	econf \
+		$(use_enable debug asserts) \
+		$(use_enable debug checks) \
+		$(use_enable static-libs static) \
+		--disable-test
+}
+
+src_compile() {
+	emake
+	if use doc; then
+		doxygen || die
+	fi
+}
+
+src_install() {
+	default
+	use doc && dohtml -r doc/html/*
+	prune_libtool_files
+}
