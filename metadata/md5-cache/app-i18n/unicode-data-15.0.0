@@ -1,0 +1,10 @@
+DEFINED_PHASES=install unpack
+DEPEND=app-arch/unzip
+DESCRIPTION=Unicode data from unicode.org
+EAPI=7
+HOMEPAGE=https://unicode.org/ucd/
+KEYWORDS=*
+LICENSE=unicode
+SLOT=0
+SRC_URI=https://unicode.org/Public/zipped/15.0.0/UCD.zip -> unicode-data-15.0.0-UCD.zip https://unicode.org/Public/zipped/15.0.0/Unihan.zip -> unicode-data-15.0.0-Unihan.zip
+_md5_=514c36b00fe78750e2a134087ca9f836

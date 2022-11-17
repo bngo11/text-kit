@@ -19,7 +19,6 @@ IUSE="cairo cjk curl +cxx debug doc +introspection +jpeg +jpeg2k +lcms nss png q
 RESTRICT="test"
 
 BDEPEND="
-	dev-util/glib-utils
 	virtual/pkgconfig
 "
 DEPEND="
