@@ -5,5 +5,3 @@ ripgrep:
         github:
           user: BurntSushi
           query: tags
-        extensions:
-          - rust

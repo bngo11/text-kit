@@ -6,8 +6,7 @@ inherit bash-completion-r1 cargo
 
 DESCRIPTION="A search tool that combines the usability of ag with the raw speed of grep"
 HOMEPAGE="https://github.com/BurntSushi/ripgrep"
-SRC_URI="https://github.com/BurntSushi/ripgrep/tarball/af6b6c543b224d348a8876f0c06245d9ea7929c5 -> ripgrep-13.0.0-af6b6c5.tar.gz
-https://direct.funtoo.org/21/0c/a3/210ca3cdf87616c5c0f16dd6e5e3cc6f686a3baa0bbbf14efc16df8d034dbefbf1ee8d668366ab05fbdf9f52bef00fc4460eb531921a7131498be78c32982fb8 -> ripgrep-13.0.0-funtoo-crates-bundle-a6e9fbe00b0f4a3319f572b8791b748b8d2681e1689439ae0073f2e0e88904a97ce7d179b5b623968ac5cde06946463dbb5ec9d87d24c1eee1096cf682d5d231.tar.gz"
+SRC_URI="https://github.com/BurntSushi/ripgrep/tarball/af6b6c543b224d348a8876f0c06245d9ea7929c5 -> ripgrep-13.0.0-af6b6c5.tar.gz"
 
 LICENSE="Apache-2.0 Boost-1.0 BSD BSD-2 CC0-1.0 ISC LGPL-3+ MIT Apache-2.0 Unlicense ZLIB"
 SLOT="0"
