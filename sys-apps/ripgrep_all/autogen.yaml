@@ -6,3 +6,5 @@ ripgrep:
           user: phiresky
           repo: ripgrep-all
           query: tags
+        extensions:
+          - rust
