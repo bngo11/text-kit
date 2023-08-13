@@ -45,6 +45,7 @@ async def generate(hub, **pkginfo):
 		).read()
 		soversion = re.search('SOVERSION ([0-9]+)|POPPLER_SOVERSION_NUMBER "([0-9]+)"', cmake_file)
 		subslot = soversion.group(1)
+
 		artifact.cleanup()
 		ebuild = hub.pkgtools.ebuild.BreezyBuild(
 			**pkginfo,
