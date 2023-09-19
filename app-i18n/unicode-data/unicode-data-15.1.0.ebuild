@@ -4,8 +4,8 @@ EAPI=7
 
 DESCRIPTION="Unicode data from unicode.org"
 HOMEPAGE="https://unicode.org/ucd/"
-SRC_URI="https://unicode.org/Public/zipped/${PV}/UCD.zip -> ${P}-UCD.zip
-	https://unicode.org/Public/zipped/${PV}/Unihan.zip -> ${P}-Unihan.zip"
+SRC_URI="https://unicode.org/Public/zipped/15.1.0/UCD.zip -> unicode-data-15.1.0-UCD.zip
+https://unicode.org/Public/zipped/15.1.0/Unihan.zip -> unicode-data-15.1.0-Unihan.zip"
 
 LICENSE="unicode"
 SLOT="0"
