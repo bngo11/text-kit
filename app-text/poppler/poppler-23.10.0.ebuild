@@ -5,7 +5,7 @@ EAPI=7
 inherit cmake toolchain-funcs xdg-utils
 
 CMAKE_BUILD_TYPE=""
-SRC_URI="https://gitlab.freedesktop.org/poppler/poppler/-/archive/poppler-23.09.0/poppler-poppler-23.09.0.tar.bz2 -> poppler-poppler-23.09.0.tar.bz2"
+SRC_URI="https://gitlab.freedesktop.org/poppler/poppler/-/archive/poppler-23.10.0/poppler-poppler-23.10.0.tar.bz2 -> poppler-poppler-23.10.0.tar.bz2"
 KEYWORDS="next"
 SLOT="0/None"
 
@@ -50,7 +50,6 @@ RDEPEND="${DEPEND}
 DOCS=( AUTHORS NEWS README.md README-XPDF )
 
 PATCHES=(
-	"${FILESDIR}/${PN}-20.12.1-qt5-deps.patch"
 	"${FILESDIR}/${PN}-21.09.0-respect-cflags.patch"
 	"${FILESDIR}/${PN}-0.57.0-disable-internal-jpx.patch"
 )
@@ -102,7 +101,9 @@ src_configure() {
 		$(cmake_use_find_package qt5 Qt5Core)
 		-DWITH_TIFF=$(usex tiff)
 		-DENABLE_UTILS=$(usex utils)
+		-DENABLE_QT5=$(usex qt5)
 		-DENABLE_QT6=OFF
+		-DENABLE_GPGME=OFF
 	)
 	use cairo && mycmakeargs+=( -DWITH_GObjectIntrospection=$(usex introspection) )
 
