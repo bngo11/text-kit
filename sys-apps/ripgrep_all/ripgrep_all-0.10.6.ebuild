@@ -6,8 +6,8 @@ inherit cargo
 
 DESCRIPTION="rga is a line-oriented search tool that allows you to look for a regex in a multitude of file types"
 HOMEPAGE="https://github.com/phiresky/ripgrep-all"
-SRC_URI="https://github.com/phiresky/ripgrep-all/tarball/291033bf9f125af778e9008b8d9b346825dcc327 -> ripgrep-all-0.9.6-291033b.tar.gz
-https://direct.funtoo.org/7c/51/54/7c51545f83f22f2788261ac82c5b3f7eb4b289bbdaa6626b9ce1e467d353be76d3a8e0d9098219cf390d12da689c6aa7a6a85634493bd9058f7823fa490712a6 -> ripgrep_all-0.9.6-funtoo-crates-bundle-d24e2804c6e4d4cb62ddfdfe649b4155092acc57cab090119a341e5d897456562f21f82ce425d30fca43da4b4f561d92fb6267f9ffb91fc5c1ae351ad264276a.tar.gz"
+SRC_URI="https://github.com/phiresky/ripgrep-all/tarball/424e293942009283c735579f65dd90c2f314094f -> ripgrep-all-0.10.6-424e293.tar.gz
+https://direct.funtoo.org/c4/c5/48/c4c548516138c27b80a0ebbab2412d1b9522580587510af7d93652c59990c24e4e961d529933c150ca291dbac6d24b8baf746a0aaec72695a56782bec04ef725 -> ripgrep_all-0.10.6-funtoo-crates-bundle-83b9919e60c19ea2a214cd60dd8e56f8102f94b62bcf0adc00f384dce020c1891f5d0edaf104b02d1a1c8155acb1232aa409a9f4952661f95559eab5f865715c.tar.gz"
 
 LICENSE="GPL"
 SLOT="0"
