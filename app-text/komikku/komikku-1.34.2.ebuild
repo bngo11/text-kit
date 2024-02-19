@@ -46,14 +46,14 @@ RDEPEND="
 		dev-python/lxml[${PYTHON_USEDEP}]
 		dev-python/natsort[${PYTHON_USEDEP}]
 		dev-python/pillow[${PYTHON_USEDEP}]
-		dev-python/pure-protobuf[${PYTHON_USEDEP}]
+		dev-python/pure_protobuf[${PYTHON_USEDEP}]
 		dev-python/pygobject[${PYTHON_USEDEP}]
 		dev-python/python-magic[${PYTHON_USEDEP}]
 		dev-python/rarfile[compressed,${PYTHON_USEDEP}]
 		dev-python/requests[${PYTHON_USEDEP}]
 		dev-python/unidecode[${PYTHON_USEDEP}]
 		dev-python/pytz_deprecation_shim[${PYTHON_USEDEP}]
-		dev-python/color-thief-py[${PYTHON_USEDEP}]
+		dev-python/colorthief[${PYTHON_USEDEP}]
 		dev-python/piexif[${PYTHON_USEDEP}]
 	')
 "
