@@ -8,12 +8,10 @@ DISTUTILS_USE_PEP517=no
 DISTUTILS_SINGLE_IMPL=1
 inherit distutils-r1 meson gnome3 virtualx
 
-MY_PN="${PN^}"
-MY_P="${MY_PN}-v${PV}"
 DESCRIPTION="An online/offline manga reader for GNOME"
 HOMEPAGE="https://gitlab.com/valos/Komikku"
-SRC_URI="{{ src_uri }}"
-S="${WORKDIR}/${MY_P}"
+SRC_URI="https://codeberg.org/valos/Komikku/archive/v1.40.0.tar.gz -> komikku-1.40.0.tar.gz"
+S="${WORKDIR}/${PN}"
 
 KEYWORDS="*"
 LICENSE="GPL-3+"
