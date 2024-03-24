@@ -36,6 +36,7 @@ RDEPEND="
 		dev-python/aiohttp[${PYTHON_USEDEP}]
 		dev-python/beautifulsoup[${PYTHON_USEDEP}]
 		dev-python/cffi[${PYTHON_USEDEP}]
+		dev-python/curl_cffi[${PYTHON_USEDEP}]
 		dev-python/cloudscraper[${PYTHON_USEDEP}]
 		dev-python/cryptography[${PYTHON_USEDEP}]
 		dev-python/dateparser[${PYTHON_USEDEP}]
