@@ -54,6 +54,7 @@ RDEPEND="
 		dev-python/pytz_deprecation_shim[${PYTHON_USEDEP}]
 		dev-python/colorthief[${PYTHON_USEDEP}]
 		dev-python/piexif[${PYTHON_USEDEP}]
+		dev-python/jaraco-functools[${PYTHON_USEDEP}]
 	')
 "
 BDEPEND="
