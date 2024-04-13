@@ -55,6 +55,7 @@ RDEPEND="
 		dev-python/colorthief[${PYTHON_USEDEP}]
 		dev-python/piexif[${PYTHON_USEDEP}]
 		dev-python/jaraco-functools[${PYTHON_USEDEP}]
+		dev-python/jaraco-context[${PYTHON_USEDEP}]
 	')
 "
 BDEPEND="
