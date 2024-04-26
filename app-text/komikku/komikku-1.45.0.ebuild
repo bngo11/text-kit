@@ -10,7 +10,7 @@ inherit distutils-r1 meson gnome3 virtualx
 
 DESCRIPTION="An online/offline manga reader for GNOME"
 HOMEPAGE="https://gitlab.com/valos/Komikku"
-SRC_URI="https://codeberg.org/valos/Komikku/archive/v1.44.0.tar.gz -> komikku-1.44.0.tar.gz"
+SRC_URI="https://codeberg.org/valos/Komikku/archive/v1.45.0.tar.gz -> komikku-1.45.0.tar.gz"
 S="${WORKDIR}/${PN}"
 
 KEYWORDS="*"
@@ -24,7 +24,7 @@ PROPERTIES="test_network"
 DEPEND="
 	dev-libs/glib:2
 	dev-libs/gobject-introspection[${PYTHON_SINGLE_USEDEP}]
-	>=x11-libs/gtk-4.8.2:4
+	>=gui-libs/gtk-4.8.2:4
 	>=gui-libs/libadwaita-1.2.0[introspection]
 	net-libs/webkit-gtk:6[introspection]
 	dev-util/blueprint-compiler
