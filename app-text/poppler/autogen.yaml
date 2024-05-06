@@ -1,0 +1,6 @@
+poppler:
+  packages:
+    - poppler:
+        gitlab:
+          server: "gitlab.freedesktop.org"
+          query: tags
