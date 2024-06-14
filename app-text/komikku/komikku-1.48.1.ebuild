@@ -10,7 +10,7 @@ inherit distutils-r1 meson gnome3 virtualx
 
 DESCRIPTION="An online/offline manga reader for GNOME"
 HOMEPAGE="https://gitlab.com/valos/Komikku"
-SRC_URI="https://codeberg.org/valos/Komikku/archive/v1.48.0.tar.gz -> komikku-1.48.0.tar.gz"
+SRC_URI="https://codeberg.org/valos/Komikku/archive/v1.48.1.tar.gz -> komikku-1.48.1.tar.gz"
 S="${WORKDIR}/${PN}"
 
 KEYWORDS="*"
@@ -56,6 +56,7 @@ RDEPEND="
 		dev-python/piexif[${PYTHON_USEDEP}]
 		dev-python/jaraco-functools[${PYTHON_USEDEP}]
 		dev-python/jaraco-context[${PYTHON_USEDEP}]
+		dev-python/pillow-heif[${PYTHON_USEDEP}]
 	')
 "
 BDEPEND="
