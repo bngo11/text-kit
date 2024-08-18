@@ -10,7 +10,7 @@ inherit distutils-r1 meson gnome3 virtualx
 
 DESCRIPTION="An online/offline manga reader for GNOME"
 HOMEPAGE="https://gitlab.com/valos/Komikku"
-SRC_URI="https://codeberg.org/valos/Komikku/archive/v1.53.0.tar.gz -> komikku-1.53.0.tar.gz"
+SRC_URI="https://codeberg.org/valos/Komikku/archive/v1.55.0.tar.gz -> komikku-1.55.0.tar.gz"
 S="${WORKDIR}/${PN}"
 
 KEYWORDS="*"
