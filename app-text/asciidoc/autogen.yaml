@@ -2,6 +2,7 @@ asciidoc_rule:
   generator: pypi-simple-1
   packages:
     - asciidoc:
+        du_pep517: setuptools
         python_compat: python3+ pypy
         rdepend: |
           app-text/docbook-xml-dtd:4.5
