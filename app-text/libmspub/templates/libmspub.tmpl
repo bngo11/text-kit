@@ -36,9 +36,6 @@ src_prepare() {
 }
 
 src_configure() {
-	# bug 619044
-	append-cxxflags -std=c++14
-
 	local myeconfargs=(
 		--disable-werror
 		$(use_with doc docs)
