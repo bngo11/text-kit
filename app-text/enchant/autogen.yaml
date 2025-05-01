@@ -1,9 +1,0 @@
-enchant:
-  generator: github-1
-  packages:
-    - enchant:
-        github:
-          user: AbiWord
-          repo: enchant
-          query: tags
-          tarball: "enchant-{version}.tar.gz"
