@@ -3,7 +3,7 @@
 from bs4 import BeautifulSoup
 
 async def generate(hub, **pkginfo):
-	html_data = await hub.pkgtools.fetch.get_page("https://unicode.org/Public/zipped/")
+	html_data = await hub.pkgtools.fetch.get_page("https://unicode.org/Public/")
 	soup = BeautifulSoup(html_data, "html.parser")
 	links = soup.find_all("a")
 	version = None
@@ -25,8 +25,8 @@ async def generate(hub, **pkginfo):
 	if version:
 		final_name1 = f'unicode-data-{version}-UCD.zip'
 		final_name2 = f'unicode-data-{version}-Unihan.zip'
-		url1 = f"https://unicode.org/Public/zipped/{version}/UCD.zip"
-		url2 = f"https://unicode.org/Public/zipped/{version}/Unihan.zip"
+		url1 = f"https://unicode.org/Public/{version}/ucd/UCD.zip"
+		url2 = f"https://unicode.org/Public/{version}/ucd/Unihan.zip"
 		ebuild = hub.pkgtools.ebuild.BreezyBuild(
 			**pkginfo,
 			version=version,
