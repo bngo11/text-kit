@@ -17,7 +17,7 @@ SRC_URI="https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download
 LICENSE="AGPL-3 CPL-1.0"
 SLOT="0"
 KEYWORDS="*"
-IUSE="cups dbus gtk l10n_de static-libs unicode X"
+IUSE="cups dbus gtk static-libs unicode X"
 
 LANGS="ja ko zh-CN zh-TW"
 for X in ${LANGS} ; do
@@ -129,7 +129,6 @@ src_configure() {
 
 	PKGCONFIG=$(type -P $(tc-getPKG_CONFIG)) \
 	econf \
-		--enable-dynamic \
 		--enable-freetype \
 		--enable-fontconfig \
 		--enable-openjpeg \
@@ -176,9 +175,5 @@ src_install() {
 
 	if ! use static-libs; then
 		find "${ED}" -name '*.la' -delete || die
-	fi
-
-	if ! use l10n_de; then
-		rm -r "${ED}"/usr/share/man/de || die
 	fi
 }
