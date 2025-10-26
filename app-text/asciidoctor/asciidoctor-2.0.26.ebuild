@@ -14,7 +14,7 @@ inherit ruby-fakegem
 
 DESCRIPTION="Processor for converting AsciiDoc into HTML 5, DocBook 4.5 and other formats"
 HOMEPAGE="https://github.com/asciidoctor/asciidoctor"
-SRC_URI="https://github.com/asciidoctor/asciidoctor/tarball/a8e63065c27b8aa4d04fdeee58ad997609c3d9f7 -> asciidoctor-2.0.25-a8e6306.tar.gz"
+SRC_URI="https://github.com/asciidoctor/asciidoctor/tarball/edf57ea1eaba0911ac55e363395021713ae7055f -> asciidoctor-2.0.26-edf57ea.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
