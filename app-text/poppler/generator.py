@@ -41,7 +41,12 @@ async def generate(hub, **pkginfo):
         info_url, is_json=True
     )
 
+    count = 0
     for version in await get_versions(pkginfo, tags_dict):
+        count += 1
+        if count == 2:
+            break
+
         package = f"{user}-{repo}-{version}"
 
         artifact = hub.pkgtools.ebuild.Artifact(
