@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from bs4 import BeautifulSoup
+import requests
 
 async def generate(hub, **pkginfo):
 	html_data = await hub.pkgtools.fetch.get_page("https://unicode.org/Public/")
@@ -17,6 +18,9 @@ async def generate(hub, **pkginfo):
 
 			try:
 				list(map(int, version.split(".")))
+				res = requests.head(f"https://unicode.org/Public/{version}/ucd/UCD.zip")
+				if res.status_code != 200:
+					continue
 				break
 
 			except ValueError:
