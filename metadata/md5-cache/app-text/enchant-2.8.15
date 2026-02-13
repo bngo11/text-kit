@@ -7,9 +7,9 @@ HOMEPAGE=https://abiword.github.io/enchant/
 IUSE=aspell +hunspell nuspell test voikko
 KEYWORDS=*
 LICENSE=LGPL-2.1+
-RDEPEND=>=dev-libs/glib-2.6:2 aspell? ( app-text/aspell ) hunspell? ( >=app-text/hunspell-1.2.1:0= ) nuspell? ( >=app-text/nuspell-5.1.0:0= ) voikko? ( dev-libs/libvoikko ) !<app-text/enchant-2.8.14:2.2
+RDEPEND=>=dev-libs/glib-2.6:2 aspell? ( app-text/aspell ) hunspell? ( >=app-text/hunspell-1.2.1:0= ) nuspell? ( >=app-text/nuspell-5.1.0:0= ) voikko? ( dev-libs/libvoikko ) !<app-text/enchant-2.8.15:2.2
 REQUIRED_USE=|| ( aspell hunspell nuspell )
 RESTRICT=!test? ( test )
 SLOT=2
-SRC_URI=https://github.com/rrthomas/enchant/releases/download/v2.8.14/enchant-2.8.14.tar.gz -> enchant-2.8.14.tar.gz
-_md5_=93132414f817d18a18949af8198b1130
+SRC_URI=https://github.com/rrthomas/enchant/releases/download/v2.8.15/enchant-2.8.15.tar.gz -> enchant-2.8.15.tar.gz
+_md5_=22bcdc1e6ee418375a99e2269802feef
