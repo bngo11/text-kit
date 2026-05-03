@@ -4,7 +4,7 @@ EAPI=7
 
 DESCRIPTION="Spellchecker wrapping library"
 HOMEPAGE="https://abiword.github.io/enchant/"
-SRC_URI="https://github.com/rrthomas/enchant/releases/download/v2.8.15/enchant-2.8.15.tar.gz -> enchant-2.8.15.tar.gz"
+SRC_URI="https://github.com/rrthomas/enchant/releases/download/v2.8.16/enchant-2.8.16.tar.gz -> enchant-2.8.16.tar.gz"
 
 LICENSE="LGPL-2.1+"
 SLOT="2"
