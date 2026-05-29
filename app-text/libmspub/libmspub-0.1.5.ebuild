@@ -6,7 +6,7 @@ inherit flag-o-matic
 
 DESCRIPTION="Library parsing Microsoft Publisher documents"
 HOMEPAGE="https://wiki.documentfoundation.org/DLP/Libraries/libmspub"
-SRC_URI="https://dev-www.libreoffice.org/src/libmspub/libmspub-0.1.4.tar.xz -> libmspub-0.1.4.tar.xz"
+SRC_URI="https://dev-www.libreoffice.org/src/libmspub/libmspub-0.1.5.tar.xz -> libmspub-0.1.5.tar.xz"
 KEYWORDS="*"
 
 LICENSE="LGPL-2.1"
