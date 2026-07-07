@@ -50,7 +50,6 @@ RDEPEND="${DEPEND}
 DOCS=( AUTHORS NEWS README.md README-XPDF )
 
 PATCHES=(
-	"${FILESDIR}/${PN}-0.57.0-disable-internal-jpx.patch"
 )
 
 post_src_unpack() {
