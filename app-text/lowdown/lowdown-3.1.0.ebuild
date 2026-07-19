@@ -6,11 +6,11 @@ inherit toolchain-funcs flag-o-matic
 
 DESCRIPTION="Markdown translator producing HTML5, roff documents in the ms and man formats"
 HOMEPAGE="https://kristaps.bsd.lv/lowdown/"
-SRC_URI="https://github.com/kristapsdz/lowdown/tarball/f4249d46942ac6c52a8abc3e31ea990cad5b6a22 -> lowdown-3.0.1-f4249d4.tar.gz"
-S="${WORKDIR}/kristapsdz-lowdown-f4249d4"
+SRC_URI="https://github.com/kristapsdz/lowdown/tarball/b709d9ad0f73868b6504bea2fc4a5e6f2b4e1eed -> lowdown-3.1.0-b709d9a.tar.gz"
+S="${WORKDIR}/kristapsdz-lowdown-b709d9a"
 
 LICENSE="ISC"
-SLOT="0/3"
+SLOT="0/4"
 KEYWORDS="*"
 
 DEPEND="
