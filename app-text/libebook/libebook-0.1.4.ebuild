@@ -7,7 +7,7 @@ inherit autotools flag-o-matic
 
 DESCRIPTION="Library parsing various ebook formats"
 HOMEPAGE="https://sourceforge.net/projects/libebook/"
-SRC_URI="https://sourceforge.net/projects/libebook/files/libe-book-0.1.3/libe-book-0.1.3.tar.xz -> libebook-0.1.3.tar.xz"
+SRC_URI="https://sourceforge.net/projects/libebook/files/libe-book-0.1.4/libe-book-0.1.4.tar.xz -> libebook-0.1.4.tar.xz"
 
 LICENSE="MPL-2.0"
 SLOT="0"
