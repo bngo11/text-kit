@@ -1,4 +1,3 @@
-=app-text/iso-codes-4.20.1 python_single_target_python3_10 python_targets_python3_10
 =app-text/xmldiff-0.6.10-r2 python_single_target_python2_7 python_targets_python2_7
 app-dicts/opendict python_single_target_python2_7 python_targets_python2_7
 app-doc/gimp-help python_single_target_python2_7 python_targets_python2_7
@@ -11,6 +10,7 @@ app-text/dblatex python_single_target_python2_7 python_targets_python2_7
 app-text/djvusmooth python_single_target_python2_7 python_targets_python2_7
 app-text/duali python_single_target_python2_7 python_targets_python2_7
 app-text/fbless python_single_target_python2_7 python_targets_python2_7
+app-text/iso-codes python_single_target_python3_10 python_targets_python3_10
 app-text/keepnote python_single_target_python2_7 python_targets_python2_7
 app-text/komikku python_single_target_python3_10 python_targets_python3_10
 app-text/mftrace python_single_target_python2_7 python_targets_python2_7
